@@ -1,0 +1,60 @@
+let arr=["this is div","this is p"];
+let ele=document.createElement("div");
+ele.innerHTML=arr;
+ele.className="main";
+ele.id="main1";
+
+var a=document.createElement("a");
+a.setAttribute=("href","https://www.google.com");
+a.setAttribute=("target","_blank");
+a.innerHTML="this lins is for google";
+document.body.append(ele,a)
+
+---------------------------------------------------------
+let div=document.createElement("div")
+let p=document.createElement("p")
+p.innerHTML="this is p"
+//parent.upped(child)
+//append the parent to the body tag
+div.append(p);
+//add the div to the body tag
+document.body.append(div)
+
+
+let di =document.createElement("div")
+let div1=document.createElement("div")
+let p1=document.createElement("p")
+div.append(p1)
+----------------------------------------------------------
+let container = document.createElement("div");
+container.className = "container";
+
+let row = document.createElement("div");
+row.className = "row";
+
+let col = document.createElement("div");
+col.className = "col";
+col.innerHTML = "this is col";
+
+row.appendChild(col);
+container.appendChild(row);
+document.body.append(container);
+---------------------------------------------------------
+how to create a form in DOM:
+1.document.getElementById()if uwant to extract the specific elemne which consist of id setAttribute
+syntax:
+2.document.getElementByclassName()
+3.document.querryselector()
+4.document.querryselectorall()
+-----------------------------------------------------------
+CODE:
+
+function foo(){
+var ele =document.getElementById("email").value;
+console.log(ele);}
+
+    <script src="dom.js"></script>
+    <label for="email"></label><br>
+    <input type="email" name="email" id="email"><br>
+    <button type="button" onclick="foo()">click</button>
+------------------------------------------------------------
